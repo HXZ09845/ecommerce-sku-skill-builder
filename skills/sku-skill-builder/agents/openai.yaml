@@ -1,0 +1,4 @@
+interface:
+  display_name: "sku-skill-builder · 行业 Meta"
+  short_description: "新品 SKU Skill Creator：从产品理解到标准 Codex Skill 包"
+  default_prompt: "Use $sku-skill-builder to create or update a product SKU Skill: confirm sources, understand product structure, choose the production archetype, apply built-in golden case abstractions for hallucination and A/B rules, extract core assets and TS risks, map selling points to visual proof, draft the standard Codex package, and validate with a representative prompt-plan."

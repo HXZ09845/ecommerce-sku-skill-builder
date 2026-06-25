@@ -1,0 +1,21 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate release package
+        run: python3 scripts/validate_release.py
+      - name: Compile Python files
+        run: python3 -m compileall scripts skills/sku-skill-builder/scripts skills/sku-skill-builder/references
+      - name: Check diff whitespace
+        run: git diff --check
+
