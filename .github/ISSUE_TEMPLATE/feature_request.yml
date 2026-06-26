@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest a workflow, docs, example, or validator improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What ecommerce AI video workflow problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Product understanding
+        - Selling-point proof mapping
+        - Asset role binding
+        - A/B state decision
+        - Prompt-plan format
+        - Validator
+        - Documentation
+        - Example package
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Public example
+      description: Optional fictional example or public reference.

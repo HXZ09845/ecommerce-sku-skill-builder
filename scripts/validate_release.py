@@ -13,7 +13,18 @@ REQUIRED_ROOT_FILES = [
     "README.md",
     "LICENSE",
     "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
     ".gitignore",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "docs/architecture.md",
+    "docs/launch-playbook.md",
+    "docs/roadmap.md",
+    "docs/why-sku-skills.md",
+    "examples/before-after.md",
     "examples/demo-product-brief.md",
     "examples/demo-selling-point-map.md",
     "examples/demo-prompt-plan.md",
@@ -47,6 +58,14 @@ PRIVATE_PATTERNS = [
     r"api[_-]?key\s*[:=]",
     r"secret\s*[:=]",
     r"token\s*[:=]",
+]
+
+README_REQUIRED_SNIPPETS = [
+    "Why Star This",
+    "The Problem",
+    "Before / After",
+    "```mermaid",
+    "skills/sku-skill-builder/SKILL.md",
 ]
 
 
@@ -113,6 +132,13 @@ def main() -> int:
                 errors.append("SKILL.md body is large; consider moving more detail to references")
         except Exception as exc:
             errors.append(f"SKILL.md frontmatter error: {exc}")
+
+    readme = ROOT / "README.md"
+    if readme.exists():
+        readme_text = readme.read_text(encoding="utf-8")
+        for snippet in README_REQUIRED_SNIPPETS:
+            if snippet not in readme_text:
+                errors.append(f"README.md missing public positioning snippet: {snippet}")
 
     scan_text_files(errors)
 

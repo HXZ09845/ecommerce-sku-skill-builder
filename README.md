@@ -1,12 +1,36 @@
 # Ecommerce SKU Skill Builder
 
-An Agent Skill system for turning ecommerce product briefs, selling points, reference assets, and case videos into validated SKU-specific video-generation skill packages.
+[![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
-电商 AIGC 短视频并不只是写 prompt。一个可复用的 SKU Skill 需要先理解商品结构、卖点证明、实拍素材角色、A/B 状态、脚本-Unit-素材编排、验证规则和 bad-case 回归。This repository packages that production workflow as a Codex-compatible Agent Skill.
+**Turn ecommerce product briefs, selling points, reference assets, and case videos into validated SKU-specific AI video-generation Skill packages.**
+
+电商 AIGC 短视频不应该从“写 prompt”开始。稳定的商品视频生产要先做商品结构理解、卖点视觉证明、素材角色绑定、A/B 状态判断、脚本-Unit-素材编排、验证和 bad-case 回归。This repository packages that workflow as a Codex-compatible Agent Skill.
+
+## Why Star This
+
+- You build AI video workflows for ecommerce products.
+- You want a real Agent Skill package structure, not just prompt examples.
+- You need a repeatable way to convert product briefs and reference assets into prompt plans.
+- You care about validation, bad-case regression, and handoff-ready Skill packages.
+
+## The Problem
+
+Most ecommerce AI video workflows fail because they jump from copywriting directly to prompt writing.
+
+| Common failure | What this Skill adds |
+|---|---|
+| Prompt starts before the product is understood | Product understanding card and component/state matrix |
+| Selling points are decorative, not visually proven | One-by-one selling-point proof mapping |
+| Reference images and videos contaminate each other | Explicit `controls` / `does_not_control` asset roles |
+| Product states conflict across clips | A/B, A-out, A-in, B, and A+B classification |
+| Generated videos fail, but lessons disappear | Bad-case regression into rules, gotchas, and validators |
+| A new operator cannot reproduce expert decisions | Fixed source confirmation, intake, and validation workflow |
 
 ## What This Is
 
-This project contains a publishable Agent Skill named `sku-skill-builder`.
+This project contains a publishable Agent Skill named [`sku-skill-builder`](skills/sku-skill-builder/SKILL.md).
 
 It helps an AI coding agent create or update concrete product SKU Skills for ecommerce AIGC short-video workflows. The output target is a self-contained skill package with:
 
@@ -17,58 +41,37 @@ It helps an AI coding agent create or update concrete product SKU Skills for eco
 - optional `assets/`
 - representative prompt plans and validation hooks
 
-## What Problem It Solves
+It is not a video model, API wrapper, SaaS product, or prompt-template dump. It is a workflow Skill for building SKU-specific production Skills.
 
-Most product-video prompt workflows fail because they jump from copywriting straight to prompt writing.
+## How It Works
 
-This skill inserts the missing production gates:
-
-1. Product understanding.
-2. Component and state matrix.
-3. Production archetype classification.
-4. A/B, A-out, A-in, B, and A+B judgment.
-5. One-by-one selling-point proof mapping.
-6. Reference asset role binding.
-7. Script to Unit to material arrangement.
-8. Prompt-plan validation.
-9. Bad-case regression into rules, gotchas, and validators.
-
-## Repository Layout
-
-```text
-ecommerce-sku-skill-builder/
-├── README.md
-├── LICENSE
-├── CHANGELOG.md
-├── examples/
-│   ├── demo-product-brief.md
-│   ├── demo-selling-point-map.md
-│   └── demo-prompt-plan.md
-├── scripts/
-│   └── validate_release.py
-└── skills/
-    └── sku-skill-builder/
-        ├── SKILL.md
-        ├── agents/
-        │   └── openai.yaml
-        ├── references/
-        └── scripts/
+```mermaid
+flowchart LR
+  A["Product brief"] --> B["Product understanding"]
+  C["Selling points"] --> D["Visual proof map"]
+  E["Reference assets"] --> F["Asset role binding"]
+  B --> G["Component and state matrix"]
+  D --> H["Script / Unit / material plan"]
+  F --> H
+  G --> I["A/B state gate"]
+  I --> J["SKU Skill package"]
+  H --> J
+  J --> K["Representative prompt-plan"]
+  K --> L["Validation"]
+  L --> M["Bad-case regression"]
+  M --> J
 ```
 
-## Install
+## Before / After
 
-Copy the skill folder into a Codex skill location:
+| Before: ordinary prompt workflow | After: SKU Skill workflow |
+|---|---|
+| "Make a premium product video for this product." | Product identity, state, target user, scene, and proof target are separated first. |
+| "Use this video as reference." | The video controls motion/rhythm only; it must not control product identity or background unless approved. |
+| "Show the product is convenient." | The selling point maps to a concrete visual proof, Unit, product state, materials, and downgrade route. |
+| "Fix the prompt, it failed." | The failure is routed to root cause, one repair variable, validator rule, or gotcha. |
 
-```bash
-mkdir -p ~/.codex/skills
-cp -R skills/sku-skill-builder ~/.codex/skills/sku-skill-builder
-```
-
-Restart Codex, then invoke:
-
-```text
-$sku-skill-builder
-```
+See [`examples/`](examples/) for a fictional product walkthrough.
 
 ## Typical Inputs
 
@@ -91,20 +94,64 @@ $sku-skill-builder
 - Product-specific validator.
 - Bad-case regression notes.
 
-## Example Workflow
+## Quick Start
 
-```text
-1. Read source materials.
-2. Confirm product structure and state matrix.
-3. Classify production archetype.
-4. Map one selling point to visual proof.
-5. Confirm reference assets and A/B judgment.
-6. Continue to the next selling point only after OK.
-7. Draft prompt-plan and target SKU Skill.
-8. Validate and route failures back into rules.
+Copy the skill folder into a Codex skill location:
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R skills/sku-skill-builder ~/.codex/skills/sku-skill-builder
 ```
 
-See `examples/` for a small fictional product walkthrough.
+Restart Codex, then invoke:
+
+```text
+$sku-skill-builder
+```
+
+Example request:
+
+```text
+Use $sku-skill-builder to create a SKU Skill for a foldable desktop humidifier.
+I have a product brief, four selling points, and a few reference images.
+Start with source confirmation and product understanding only.
+```
+
+## Repository Layout
+
+```text
+ecommerce-sku-skill-builder/
+├── README.md
+├── docs/
+│   ├── architecture.md
+│   ├── launch-playbook.md
+│   ├── roadmap.md
+│   └── why-sku-skills.md
+├── examples/
+│   ├── demo-product-brief.md
+│   ├── demo-selling-point-map.md
+│   ├── demo-prompt-plan.md
+│   └── before-after.md
+├── scripts/
+│   └── validate_release.py
+└── skills/
+    └── sku-skill-builder/
+        ├── SKILL.md
+        ├── agents/openai.yaml
+        ├── references/
+        └── scripts/
+```
+
+## Core References
+
+| File | Purpose |
+|---|---|
+| [`product-rules.md`](skills/sku-skill-builder/references/product-rules.md) | Industry-general product/state/A-B rules |
+| [`sku-creator-workflow.md`](skills/sku-skill-builder/references/sku-creator-workflow.md) | Staged creation workflow |
+| [`audio-visual-sync.md`](skills/sku-skill-builder/references/audio-visual-sync.md) | Script to Unit to material alignment |
+| [`prompt-plan-format.md`](skills/sku-skill-builder/references/prompt-plan-format.md) | Representative prompt-plan contract |
+| [`gotchas.md`](skills/sku-skill-builder/references/gotchas.md) | Repeatable failure patterns and prevention |
+| [`validate-template.py`](skills/sku-skill-builder/references/validate-template.py) | Product-specific validator starter |
 
 ## Validation
 
@@ -114,16 +161,16 @@ Run the release check:
 python3 scripts/validate_release.py
 ```
 
-The validator checks the public release shape, skill frontmatter, required references, scripts, examples, and common private-path or token leaks.
+The validator checks the public release shape, skill frontmatter, required references, examples, and common private-path or credential leaks.
 
-## Design Notes
+## Learn More
 
-- The root README is for GitHub users.
-- The actual Codex skill lives under `skills/sku-skill-builder/`.
-- Dense operating rules live in `references/` so `SKILL.md` stays as the routing entrypoint.
-- Runtime product assets should stay pending until an operator approves the material version.
+- [Why SKU Skills?](docs/why-sku-skills.md)
+- [Architecture](docs/architecture.md)
+- [Launch Playbook](docs/launch-playbook.md)
+- [Roadmap](docs/roadmap.md)
+- [Contributing](CONTRIBUTING.md)
 
 ## License
 
 MIT
-
