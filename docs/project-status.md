@@ -33,8 +33,9 @@ Run these from the repository root:
 python3 scripts/validate_release.py
 python3 scripts/install_codex_skill.py --dry-run
 python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
+python3 scripts/prompt_plan_check.py templates/prompt-plan-template.md
 python3 scripts/source_registry_check.py
-python3 scripts/structured_data_check.py --asset-manifest examples/demo-asset-manifest.json --take-review examples/demo-take-review.json
+python3 scripts/structured_data_check.py --asset-manifest examples/demo-asset-manifest.json --asset-manifest templates/asset-manifest-template.json --take-review examples/demo-take-review.json --take-review templates/take-review-template.json
 python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py
 python3 -m unittest discover -s tests -v
 ```

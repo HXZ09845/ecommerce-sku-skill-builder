@@ -12,6 +12,7 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 - Add schemas, evals, tests, prompt-plan checks, and source registry checks.
 - Add structured JSON examples for asset manifests and take reviews.
 - Add project status, trust matrix, and reproducible health checks.
+- Add public templates for first-time users.
 
 ## 0.2 Example Depth
 

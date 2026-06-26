@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "id": "@Image1",
+      "priority": "P0",
+      "role": "product_identity",
+      "controls": "product shape, color, scale, material, and visible component layout",
+      "does_not_control": "background, user action, camera motion, generated text",
+      "status": "approved"
+    },
+    {
+      "id": "@Image2",
+      "priority": "P2",
+      "role": "scene_reference",
+      "controls": "scene category, surface type, lighting mood, and background density",
+      "does_not_control": "product identity, product state, brand text, new product parts",
+      "status": "pending"
+    },
+    {
+      "id": "@Video1",
+      "priority": "P1",
+      "role": "motion_reference",
+      "controls": "camera rhythm, hand timing, and action pacing only",
+      "does_not_control": "product identity, product state, scene layout, brand text",
+      "status": "pending"
+    }
+  ]
+}

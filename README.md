@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.6-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.7-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
@@ -129,6 +129,8 @@ python3 scripts/source_registry_check.py
 - Approved or pending asset manifest.
 - Target platform, aspect ratio, model, duration, and compliance constraints.
 
+Start from [`templates/`](templates/) if you want fillable product-brief, selling-point, asset-manifest, prompt-plan, and take-review files.
+
 ## Typical Outputs
 
 - Source confirmation card.
@@ -201,6 +203,12 @@ ecommerce-sku-skill-builder/
 ├── scripts/
 │   ├── install_codex_skill.py
 │   └── validate_release.py
+├── templates/
+│   ├── product-brief-template.md
+│   ├── selling-point-map-template.md
+│   ├── asset-manifest-template.json
+│   ├── prompt-plan-template.md
+│   └── take-review-template.json
 └── skills/
     └── sku-skill-builder/
         ├── SKILL.md
@@ -232,6 +240,7 @@ Run prompt-plan checks:
 
 ```bash
 python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
+python3 scripts/prompt_plan_check.py templates/prompt-plan-template.md
 python3 -m unittest discover -s tests -v
 ```
 

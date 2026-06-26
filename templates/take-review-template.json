@@ -1,0 +1,11 @@
+{
+  "reviews": [
+    {
+      "unit": "U1",
+      "verdict": "retake",
+      "observed_end_state": "Describe the actual final frame, including product state, user action, text artifacts, and scene drift.",
+      "root_cause": "Name the most likely first cause: product identity drift, wrong component binding, weak stop condition, reference contamination, or platform fact error.",
+      "first_repair_variable": "Change one variable first, such as asset role, component binding, motion intensity, stop condition, or forbidden text rule."
+    }
+  ]
+}

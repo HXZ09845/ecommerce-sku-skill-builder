@@ -13,8 +13,16 @@ class StructuredDataCheckTests(unittest.TestCase):
         errors = validate_asset_manifest(ROOT / "examples" / "demo-asset-manifest.json")
         self.assertEqual(errors, [])
 
+    def test_template_asset_manifest_passes(self) -> None:
+        errors = validate_asset_manifest(ROOT / "templates" / "asset-manifest-template.json")
+        self.assertEqual(errors, [])
+
     def test_demo_take_review_passes(self) -> None:
         errors = validate_take_review(ROOT / "examples" / "demo-take-review.json")
+        self.assertEqual(errors, [])
+
+    def test_template_take_review_passes(self) -> None:
+        errors = validate_take_review(ROOT / "templates" / "take-review-template.json")
         self.assertEqual(errors, [])
 
     def test_duplicate_asset_id_fails(self) -> None:

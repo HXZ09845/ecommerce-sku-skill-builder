@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.7 - 2026-06-26
+
+- Added public templates for product briefs, selling-point maps, asset manifests, prompt plans, and take reviews.
+- Added template validation in CI for JSON templates and the prompt-plan template.
+- Extended release validation to require the public template set.
+
 ## 0.1.6 - 2026-06-26
 
 - Added a project status document with release maturity, trust matrix, reproducible health checks, and explicit non-goals.

@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder 中文说明
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.6-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.7-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 English · [中文](README.zh.md)
@@ -49,6 +49,8 @@ English · [中文](README.zh.md)
 - 实拍商品图、细节图、场景图、动作视频。
 - 已经写过的 prompt-plan 或脚本素材编排。
 - 目标平台、视频比例、时长、模型和风险约束。
+
+如果你要从自己的商品开始，可以先复制 [`templates/`](templates/) 里的商品 Brief、卖点证明、素材清单、prompt-plan 和 take-review 模板。
 
 ## 输出是什么
 
@@ -142,6 +144,7 @@ ecommerce-sku-skill-builder/
 │   └── real-run-a6-office-tea-bar/
 │       └── office-tea-bar-overtime-sku/
 ├── examples/
+├── templates/
 ├── docs/
 ├── scripts/
 │   ├── install_codex_skill.py
@@ -155,6 +158,7 @@ ecommerce-sku-skill-builder/
 ```bash
 python3 scripts/validate_release.py
 python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
+python3 scripts/prompt_plan_check.py templates/prompt-plan-template.md
 python3 -m unittest discover -s tests -v
 python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py \
   case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md
