@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder 中文说明
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.3-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.4-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 English · [中文](README.zh.md)
@@ -161,9 +161,27 @@ python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scri
 | [`schemas/prompt-plan.schema.json`](schemas/prompt-plan.schema.json) | prompt-plan 结构契约 |
 | [`schemas/asset-manifest.schema.json`](schemas/asset-manifest.schema.json) | 素材角色和审批状态契约 |
 | [`schemas/take-review.schema.json`](schemas/take-review.schema.json) | 生成结果复盘契约 |
+| [`schemas/source-registry.schema.json`](schemas/source-registry.schema.json) | 公开来源和隐私边界契约 |
 | [`evals/prompt-plan-evals.json`](evals/prompt-plan-evals.json) | prompt-plan eval 案例 |
 | [`scripts/prompt_plan_check.py`](scripts/prompt_plan_check.py) | markdown prompt-plan 检查脚本 |
+| [`scripts/source_registry_check.py`](scripts/source_registry_check.py) | 来源和脱敏边界检查脚本 |
 | [`tests/test_prompt_plan_check.py`](tests/test_prompt_plan_check.py) | checker 单元测试 |
+
+## 来源登记
+
+公开证据登记在：
+
+[`data/source-registry.json`](data/source-registry.json)
+
+说明文档：
+
+[`docs/source-registry.md`](docs/source-registry.md)
+
+校验命令：
+
+```bash
+python3 scripts/source_registry_check.py
+```
 
 ## 核心定位
 

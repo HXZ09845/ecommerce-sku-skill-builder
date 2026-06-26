@@ -1,0 +1,62 @@
+{
+  "version": "0.1.4",
+  "last_updated": "2026-06-26",
+  "policy": "Public repository sources must be fictional, generated, open project files, or anonymized real-run evidence. Raw private media, local paths, asset IDs, customer data, and unpublished generated videos are not included.",
+  "sources": [
+    {
+      "id": "workflow_hero",
+      "title": "README workflow hero",
+      "type": "generated_asset",
+      "path": "assets/workflow-hero.png",
+      "privacy_level": "public",
+      "status": "included",
+      "includes": ["generated workflow infographic", "public project framing"],
+      "excludes": ["real product media", "brand logos", "customer assets"],
+      "verified_on": "2026-06-26"
+    },
+    {
+      "id": "fictional_humidifier_demo",
+      "title": "Fictional foldable desktop humidifier demo",
+      "type": "fictional_demo",
+      "path": "examples/complete-chinese-case.md",
+      "privacy_level": "public",
+      "status": "included",
+      "includes": ["fictional product brief", "fictional selling-point map", "example prompts"],
+      "excludes": ["real customer materials", "private media"],
+      "verified_on": "2026-06-26"
+    },
+    {
+      "id": "real_run_office_tea_bar",
+      "title": "Anonymized office tea-bar machine real run",
+      "type": "anonymized_real_run",
+      "path": "case-studies/real-run-a6-office-tea-bar/README.md",
+      "privacy_level": "anonymized",
+      "status": "included",
+      "includes": ["unit schedule", "A/B decisions", "prompt-contract deltas", "take-review rules"],
+      "excludes": ["brand name", "raw product photos", "raw action videos", "person reference asset", "local paths", "asset IDs", "unpublished generated videos"],
+      "verified_on": "2026-06-26"
+    },
+    {
+      "id": "real_run_output_skill_sample",
+      "title": "Anonymized output SKU Skill sample",
+      "type": "anonymized_output_package",
+      "path": "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/SKILL.md",
+      "privacy_level": "anonymized",
+      "status": "included",
+      "includes": ["SKILL.md", "prompt-plan example", "gotchas", "trigger tests", "case validator"],
+      "excludes": ["raw assets", "raw product photos", "raw action videos", "local paths", "local runtime directories", "asset IDs", "real media files"],
+      "verified_on": "2026-06-26"
+    },
+    {
+      "id": "packaged_sku_skill_builder",
+      "title": "Packaged sku-skill-builder Agent Skill",
+      "type": "skill_package",
+      "path": "skills/sku-skill-builder/SKILL.md",
+      "privacy_level": "public",
+      "status": "included",
+      "includes": ["public skill instructions", "references", "scripts", "agent metadata"],
+      "excludes": ["private product libraries", "customer-specific media", "local source workspace"],
+      "verified_on": "2026-06-26"
+    }
+  ]
+}

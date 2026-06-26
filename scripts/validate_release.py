@@ -31,9 +31,11 @@ REQUIRED_ROOT_FILES = [
     "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md",
     "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/trigger-tests.md",
     "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py",
+    "data/source-registry.json",
     "docs/architecture.md",
     "docs/launch-playbook.md",
     "docs/roadmap.md",
+    "docs/source-registry.md",
     "docs/why-sku-skills.md",
     "evals/prompt-plan-evals.json",
     "examples/before-after.md",
@@ -43,8 +45,10 @@ REQUIRED_ROOT_FILES = [
     "examples/demo-prompt-plan.md",
     "scripts/install_codex_skill.py",
     "scripts/prompt_plan_check.py",
+    "scripts/source_registry_check.py",
     "schemas/asset-manifest.schema.json",
     "schemas/prompt-plan.schema.json",
+    "schemas/source-registry.schema.json",
     "schemas/take-review.schema.json",
     "skills/sku-skill-builder/SKILL.md",
     "skills/sku-skill-builder/agents/openai.yaml",
@@ -85,6 +89,7 @@ README_REQUIRED_SNIPPETS = [
     "Before / After",
     "Complete Chinese Walkthrough",
     "Real Run Case Study",
+    "Source Registry",
     "assets/workflow-hero.png",
     "Schemas And Evals",
     "README.zh.md",
@@ -98,6 +103,7 @@ README_ZH_REQUIRED_SNIPPETS = [
     "真实案例",
     "最终输出 SKU Skill 包样例",
     "Schema / Eval / Test",
+    "来源登记",
 ]
 
 

@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.3-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.4-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
@@ -101,6 +101,16 @@ The repository also includes an anonymized real production run:
 [`case-studies/real-run-a6-office-tea-bar/`](case-studies/real-run-a6-office-tea-bar/)
 
 This case is derived from a real ecommerce video prompt-plan workflow. Product brand names, raw media files, asset IDs, and unpublished generated videos are intentionally not included. The public case keeps the useful engineering evidence: Unit schedule, A/B decisions, asset role boundaries, before/after prompt changes, take-review rules, and what was learned from the run.
+
+## Source Registry
+
+Public evidence is tracked in [`data/source-registry.json`](data/source-registry.json) and explained in [`docs/source-registry.md`](docs/source-registry.md).
+
+Run:
+
+```bash
+python3 scripts/source_registry_check.py
+```
 
 ## Typical Inputs
 
@@ -226,8 +236,10 @@ The validators check the public release shape, skill frontmatter, required refer
 | [`schemas/prompt-plan.schema.json`](schemas/prompt-plan.schema.json) | Structured prompt-plan contract |
 | [`schemas/asset-manifest.schema.json`](schemas/asset-manifest.schema.json) | Asset role and approval contract |
 | [`schemas/take-review.schema.json`](schemas/take-review.schema.json) | Generated-take review contract |
+| [`schemas/source-registry.schema.json`](schemas/source-registry.schema.json) | Public source and privacy-boundary contract |
 | [`evals/prompt-plan-evals.json`](evals/prompt-plan-evals.json) | Prompt-plan validation cases |
 | [`scripts/prompt_plan_check.py`](scripts/prompt_plan_check.py) | Markdown prompt-plan checker |
+| [`scripts/source_registry_check.py`](scripts/source_registry_check.py) | Source provenance and privacy-boundary checker |
 
 ## Learn More
 

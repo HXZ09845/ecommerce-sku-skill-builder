@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.4 - 2026-06-26
+
+- Added a machine-readable source registry for public evidence and privacy boundaries.
+- Added source registry documentation.
+- Added `scripts/source_registry_check.py` and unit tests.
+- Added a source-registry JSON schema.
+- Extended CI and release validation for source provenance checks.
+
 ## 0.1.3 - 2026-06-26
 
 - Added prompt-plan, asset-manifest, and take-review JSON schemas.

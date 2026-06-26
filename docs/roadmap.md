@@ -9,6 +9,7 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 - Add fictional examples and release validation.
 - Add GitHub community files.
 - Add Chinese README, installer, workflow hero, and an anonymized real-run output sample.
+- Add schemas, evals, tests, prompt-plan checks, and source registry checks.
 
 ## 0.2 Example Depth
 
@@ -16,6 +17,7 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 - Add a richer before/after prompt-plan comparison.
 - Add more product-state examples for appliances, drinkware, apparel, and desk products.
 - Add bad-case regression examples that show how failed generations become rules.
+- Add public source-registry entries for every new case study.
 
 ## 0.3 Validator Depth
 
