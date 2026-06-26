@@ -26,6 +26,7 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 
 - Expand validation for selling-point proof coverage. Started in 0.1.8 with `scripts/selling_point_check.py`.
 - Add checks for product-state contradictions.
+- Add checks for Unit A/B type validity and B-class video references. Started in 0.1.9 with `scripts/unit_contract_check.py`.
 - Add checks for reserved-beat leakage across multi-clip plans.
 - Add richer evals for failed prompt-plan examples.
 

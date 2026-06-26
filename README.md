@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.8-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.9-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
@@ -242,6 +242,7 @@ Run prompt-plan checks:
 python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
 python3 scripts/prompt_plan_check.py templates/prompt-plan-template.md
 python3 scripts/selling_point_check.py templates/prompt-plan-template.md --require-map --min-proof-units 2
+python3 scripts/unit_contract_check.py templates/prompt-plan-template.md
 python3 -m unittest discover -s tests -v
 ```
 
@@ -262,6 +263,7 @@ The validators check the public release shape, skill frontmatter, required refer
 | [`examples/demo-asset-manifest.json`](examples/demo-asset-manifest.json) | Example asset manifest |
 | [`examples/demo-take-review.json`](examples/demo-take-review.json) | Example generated-take review |
 | [`scripts/structured_data_check.py`](scripts/structured_data_check.py) | JSON example checker |
+| [`scripts/unit_contract_check.py`](scripts/unit_contract_check.py) | Unit A/B type and B-class video-reference checker |
 
 ## Learn More
 

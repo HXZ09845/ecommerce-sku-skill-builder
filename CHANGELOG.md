@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.9 - 2026-06-26
+
+- Added `scripts/unit_contract_check.py` to validate Unit A/B types, duplicate Units, Stop-when fields, and B-class action-video references.
+- Added unit tests for invalid A/B types and B-class Units without `@Video` references.
+- Added CI coverage for Unit contracts in the public template and anonymized real-run case.
+
 ## 0.1.8 - 2026-06-26
 
 - Added `scripts/selling_point_check.py` to validate selling-point proof coverage in prompt plans.

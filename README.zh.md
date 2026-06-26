@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder 中文说明
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.8-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.9-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 English · [中文](README.zh.md)
@@ -160,6 +160,7 @@ python3 scripts/validate_release.py
 python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
 python3 scripts/prompt_plan_check.py templates/prompt-plan-template.md
 python3 scripts/selling_point_check.py templates/prompt-plan-template.md --require-map --min-proof-units 2
+python3 scripts/unit_contract_check.py templates/prompt-plan-template.md
 python3 -m unittest discover -s tests -v
 python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py \
   case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md
@@ -182,6 +183,7 @@ python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scri
 | [`examples/demo-asset-manifest.json`](examples/demo-asset-manifest.json) | 素材清单 JSON 示例 |
 | [`examples/demo-take-review.json`](examples/demo-take-review.json) | 生成结果复盘 JSON 示例 |
 | [`scripts/structured_data_check.py`](scripts/structured_data_check.py) | JSON 示例检查脚本 |
+| [`scripts/unit_contract_check.py`](scripts/unit_contract_check.py) | Unit A/B 类型和 B-class 视频引用检查脚本 |
 | [`tests/test_prompt_plan_check.py`](tests/test_prompt_plan_check.py) | checker 单元测试 |
 
 ## 来源登记

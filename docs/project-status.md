@@ -35,6 +35,7 @@ python3 scripts/install_codex_skill.py --dry-run
 python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
 python3 scripts/prompt_plan_check.py templates/prompt-plan-template.md
 python3 scripts/selling_point_check.py templates/prompt-plan-template.md --require-map --min-proof-units 2
+python3 scripts/unit_contract_check.py templates/prompt-plan-template.md
 python3 scripts/source_registry_check.py
 python3 scripts/structured_data_check.py --asset-manifest examples/demo-asset-manifest.json --asset-manifest templates/asset-manifest-template.json --take-review examples/demo-take-review.json --take-review templates/take-review-template.json
 python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py

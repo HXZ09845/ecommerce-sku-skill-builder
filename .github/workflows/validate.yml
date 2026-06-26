@@ -26,6 +26,10 @@ jobs:
         run: |
           python3 scripts/selling_point_check.py templates/prompt-plan-template.md --require-map --min-proof-units 2
           python3 scripts/selling_point_check.py case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md --min-proof-units 5
+      - name: Validate Unit contracts
+        run: |
+          python3 scripts/unit_contract_check.py templates/prompt-plan-template.md
+          python3 scripts/unit_contract_check.py case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md
       - name: Validate source registry
         run: python3 scripts/source_registry_check.py
       - name: Validate structured JSON examples

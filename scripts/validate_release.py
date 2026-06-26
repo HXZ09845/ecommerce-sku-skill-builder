@@ -51,6 +51,7 @@ REQUIRED_ROOT_FILES = [
     "scripts/selling_point_check.py",
     "scripts/source_registry_check.py",
     "scripts/structured_data_check.py",
+    "scripts/unit_contract_check.py",
     "schemas/asset-manifest.schema.json",
     "schemas/prompt-plan.schema.json",
     "schemas/source-registry.schema.json",
@@ -66,6 +67,7 @@ REQUIRED_ROOT_FILES = [
     "tests/test_prompt_plan_check.py",
     "tests/test_selling_point_check.py",
     "tests/test_structured_data_check.py",
+    "tests/test_unit_contract_check.py",
     "tests/test_source_registry_check.py",
 ]
 
