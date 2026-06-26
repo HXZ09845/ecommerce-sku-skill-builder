@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.5-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.6-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
@@ -48,6 +48,14 @@ It helps an AI coding agent create or update concrete product SKU Skills for eco
 - representative prompt plans and validation hooks
 
 It is not a video model, API wrapper, SaaS product, or prompt-template dump. It is a workflow Skill for building SKU-specific production Skills.
+
+## Project Status
+
+Current maturity: **project-ready**, not end-user-ready.
+
+You can inspect the Skill package, install it locally, run validation scripts, study fictional and anonymized real-run examples, and adapt the workflow for your own SKU Skills. This repository does not generate final videos by itself and does not include private raw media.
+
+See [`docs/project-status.md`](docs/project-status.md) for the trust matrix, reproducible health checks, and explicit non-goals.
 
 ## How It Works
 
@@ -248,6 +256,7 @@ The validators check the public release shape, skill frontmatter, required refer
 
 - [Why SKU Skills?](docs/why-sku-skills.md)
 - [Architecture](docs/architecture.md)
+- [Project Status](docs/project-status.md)
 - [Launch Playbook](docs/launch-playbook.md)
 - [Roadmap](docs/roadmap.md)
 - [Contributing](CONTRIBUTING.md)

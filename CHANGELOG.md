@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.6 - 2026-06-26
+
+- Added a project status document with release maturity, trust matrix, reproducible health checks, and explicit non-goals.
+- Linked project status from English and Chinese README files.
+- Extended release validation to require the project status document and README positioning.
+
 ## 0.1.5 - 2026-06-26
 
 - Added JSON examples for asset manifests and take reviews.

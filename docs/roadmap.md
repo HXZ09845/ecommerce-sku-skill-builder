@@ -11,6 +11,7 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 - Add Chinese README, installer, workflow hero, and an anonymized real-run output sample.
 - Add schemas, evals, tests, prompt-plan checks, and source registry checks.
 - Add structured JSON examples for asset manifests and take reviews.
+- Add project status, trust matrix, and reproducible health checks.
 
 ## 0.2 Example Depth
 

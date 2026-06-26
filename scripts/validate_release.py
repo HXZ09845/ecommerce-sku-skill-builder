@@ -34,6 +34,7 @@ REQUIRED_ROOT_FILES = [
     "data/source-registry.json",
     "docs/architecture.md",
     "docs/launch-playbook.md",
+    "docs/project-status.md",
     "docs/roadmap.md",
     "docs/source-registry.md",
     "docs/why-sku-skills.md",
@@ -95,6 +96,7 @@ README_REQUIRED_SNIPPETS = [
     "Complete Chinese Walkthrough",
     "Real Run Case Study",
     "Source Registry",
+    "Project Status",
     "assets/workflow-hero.png",
     "Schemas And Evals",
     "README.zh.md",
@@ -105,6 +107,7 @@ README_REQUIRED_SNIPPETS = [
 README_ZH_REQUIRED_SNIPPETS = [
     "解决什么问题",
     "快速安装",
+    "项目成熟度",
     "真实案例",
     "最终输出 SKU Skill 包样例",
     "Schema / Eval / Test",

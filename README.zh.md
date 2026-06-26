@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder 中文说明
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.5-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.6-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 English · [中文](README.zh.md)
@@ -11,6 +11,14 @@ English · [中文](README.zh.md)
 这个项目不是一个视频生成 API，也不是一堆 prompt 模板。它是一个 Codex / Agent Skill 工作流，用来帮助团队把“已经判断好的商品卖点和素材”稳定翻译成 AI 视频模型更容易执行的镜头任务。
 
 ![Ecommerce SKU Skill Builder workflow](assets/workflow-hero.png)
+
+## 项目成熟度
+
+当前成熟度：**project-ready**，不是 end-user-ready。
+
+也就是说，你可以查看 Skill 包、在本地安装、运行校验脚本、学习虚构样例和脱敏真实案例，并把这套方法改造成自己的 SKU Skill。它不会直接生成最终视频，也不包含私有原始素材。
+
+详见 [`docs/project-status.md`](docs/project-status.md)，里面写清了信任矩阵、可复现健康检查和明确不做的事情。
 
 ## 解决什么问题
 
