@@ -14,8 +14,11 @@ jobs:
           python-version: "3.11"
       - name: Validate release package
         run: python3 scripts/validate_release.py
+      - name: Check installer dry run
+        run: python3 scripts/install_codex_skill.py --dry-run
+      - name: Validate real-run case output
+        run: python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py
       - name: Compile Python files
-        run: python3 -m compileall scripts skills/sku-skill-builder/scripts skills/sku-skill-builder/references
+        run: python3 -m compileall scripts skills/sku-skill-builder/scripts skills/sku-skill-builder/references case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts
       - name: Check diff whitespace
         run: git diff --check
-

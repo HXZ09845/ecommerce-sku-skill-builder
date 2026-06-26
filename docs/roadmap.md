@@ -8,10 +8,11 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 - Document the SKU Skill workflow and repository structure.
 - Add fictional examples and release validation.
 - Add GitHub community files.
+- Add Chinese README, installer, workflow hero, and an anonymized real-run output sample.
 
 ## 0.2 Example Depth
 
-- Add one complete fictional SKU Skill output.
+- Add two more anonymized real-run case studies from different product categories.
 - Add a richer before/after prompt-plan comparison.
 - Add more product-state examples for appliances, drinkware, apparel, and desk products.
 - Add bad-case regression examples that show how failed generations become rules.

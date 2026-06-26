@@ -11,6 +11,7 @@ SKILL = ROOT / "skills" / "sku-skill-builder"
 
 REQUIRED_ROOT_FILES = [
     "README.md",
+    "README.zh.md",
     "LICENSE",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
@@ -23,6 +24,13 @@ REQUIRED_ROOT_FILES = [
     "assets/workflow-hero.png",
     "case-studies/real-run-a6-office-tea-bar/README.md",
     "case-studies/real-run-a6-office-tea-bar/prompt-before-after.md",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/SKILL.md",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/agents/openai.yaml",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/gotchas.md",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/product-rules.md",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/trigger-tests.md",
+    "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py",
     "docs/architecture.md",
     "docs/launch-playbook.md",
     "docs/roadmap.md",
@@ -32,6 +40,7 @@ REQUIRED_ROOT_FILES = [
     "examples/demo-product-brief.md",
     "examples/demo-selling-point-map.md",
     "examples/demo-prompt-plan.md",
+    "scripts/install_codex_skill.py",
     "skills/sku-skill-builder/SKILL.md",
     "skills/sku-skill-builder/agents/openai.yaml",
 ]
@@ -71,8 +80,16 @@ README_REQUIRED_SNIPPETS = [
     "Complete Chinese Walkthrough",
     "Real Run Case Study",
     "assets/workflow-hero.png",
+    "README.zh.md",
     "```mermaid",
     "skills/sku-skill-builder/SKILL.md",
+]
+
+README_ZH_REQUIRED_SNIPPETS = [
+    "解决什么问题",
+    "快速安装",
+    "真实案例",
+    "最终输出 SKU Skill 包样例",
 ]
 
 
@@ -146,6 +163,13 @@ def main() -> int:
         for snippet in README_REQUIRED_SNIPPETS:
             if snippet not in readme_text:
                 errors.append(f"README.md missing public positioning snippet: {snippet}")
+
+    readme_zh = ROOT / "README.zh.md"
+    if readme_zh.exists():
+        readme_zh_text = readme_zh.read_text(encoding="utf-8")
+        for snippet in README_ZH_REQUIRED_SNIPPETS:
+            if snippet not in readme_zh_text:
+                errors.append(f"README.zh.md missing Chinese positioning snippet: {snippet}")
 
     scan_text_files(errors)
 

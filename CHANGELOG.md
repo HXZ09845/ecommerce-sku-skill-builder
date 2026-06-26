@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-06-26
+
+- Added a Chinese README for ecommerce video producers and SKU Skill users.
+- Added `scripts/install_codex_skill.py` for local Codex Skill installation.
+- Added an anonymized final output SKU Skill sample for the real-run case study.
+- Extended CI and release validation for installer and case-study output checks.
+
 ## 0.1.1 - 2026-06-26
 
 - Added a generated workflow hero image for the README.

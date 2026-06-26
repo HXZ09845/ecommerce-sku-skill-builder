@@ -1,10 +1,13 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
+[![Version](https://img.shields.io/badge/version-v0.1.2-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
 **Turn ecommerce product briefs, selling points, reference assets, and case videos into validated SKU-specific AI video-generation Skill packages.**
+
+English · [中文](README.zh.md)
 
 电商 AIGC 短视频不应该从“写 prompt”开始。稳定的商品视频生产要先做商品结构理解、卖点视觉证明、素材角色绑定、A/B 状态判断、脚本-Unit-素材编排、验证和 bad-case 回归。This repository packages that workflow as a Codex-compatible Agent Skill.
 
@@ -122,7 +125,13 @@ This case is derived from a real ecommerce video prompt-plan workflow. Product b
 
 ## Quick Start
 
-Copy the skill folder into a Codex skill location:
+Install the packaged Skill:
+
+```bash
+python3 scripts/install_codex_skill.py
+```
+
+Or copy the skill folder manually:
 
 ```bash
 mkdir -p ~/.codex/skills
@@ -143,15 +152,23 @@ I have a product brief, four selling points, and a few reference images.
 Start with source confirmation and product understanding only.
 ```
 
+You can test the installer without writing files:
+
+```bash
+python3 scripts/install_codex_skill.py --dry-run
+```
+
 ## Repository Layout
 
 ```text
 ecommerce-sku-skill-builder/
 ├── README.md
+├── README.zh.md
 ├── assets/
 │   └── workflow-hero.png
 ├── case-studies/
 │   └── real-run-a6-office-tea-bar/
+│       └── office-tea-bar-overtime-sku/
 ├── docs/
 │   ├── architecture.md
 │   ├── launch-playbook.md
@@ -164,6 +181,7 @@ ecommerce-sku-skill-builder/
 │   ├── demo-prompt-plan.md
 │   └── before-after.md
 ├── scripts/
+│   ├── install_codex_skill.py
 │   └── validate_release.py
 └── skills/
     └── sku-skill-builder/

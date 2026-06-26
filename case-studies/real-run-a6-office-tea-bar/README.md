@@ -125,3 +125,26 @@ This public case intentionally includes the method and prompt-contract evidence,
 | Reusable rules | Local paths and asset IDs |
 
 This is the intended public pattern for future real cases: show the repeatable workflow, protect the raw material rights.
+
+## 9. Final Output Skill Sample
+
+The anonymized output package is included here:
+
+[`office-tea-bar-overtime-sku/`](office-tea-bar-overtime-sku/)
+
+It shows what a generated SKU Skill package can look like after this workflow:
+
+```text
+office-tea-bar-overtime-sku/
+├── SKILL.md
+├── agents/openai.yaml
+├── references/
+│   ├── gotchas.md
+│   ├── product-rules.md
+│   ├── prompt-plan.md
+│   └── trigger-tests.md
+└── scripts/
+    └── validate_case.py
+```
+
+This sample is intentionally symbolic: references use `@Image1`, `@Image2`, and `@Video1` style placeholders instead of real media paths. The goal is to show the final package shape, not to publish raw assets.
