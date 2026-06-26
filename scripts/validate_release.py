@@ -25,6 +25,7 @@ REQUIRED_ROOT_FILES = [
     "docs/roadmap.md",
     "docs/why-sku-skills.md",
     "examples/before-after.md",
+    "examples/complete-chinese-case.md",
     "examples/demo-product-brief.md",
     "examples/demo-selling-point-map.md",
     "examples/demo-prompt-plan.md",
@@ -64,6 +65,7 @@ README_REQUIRED_SNIPPETS = [
     "Why Star This",
     "The Problem",
     "Before / After",
+    "Complete Chinese Walkthrough",
     "```mermaid",
     "skills/sku-skill-builder/SKILL.md",
 ]

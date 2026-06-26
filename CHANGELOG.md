@@ -4,6 +4,7 @@
 
 - Expanded README with problem framing, workflow diagram, before/after examples, and public launch positioning.
 - Added docs for architecture, launch playbook, SKU Skill rationale, and roadmap.
+- Added a complete Chinese walkthrough showing inputs, before/after prompts, human review gates, and Seedance-style shot prompts.
 - Added GitHub community files for contributions, security reporting, issues, and pull requests.
 - Extended release validation to cover public project packaging.
 

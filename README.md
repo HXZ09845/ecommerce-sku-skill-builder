@@ -73,6 +73,21 @@ flowchart LR
 
 See [`examples/`](examples/) for a fictional product walkthrough.
 
+## Complete Chinese Walkthrough
+
+If you want to understand the project quickly, start here:
+
+[`examples/complete-chinese-case.md`](examples/complete-chinese-case.md)
+
+It shows a full fictional ecommerce video case in Chinese:
+
+- original product brief, selling points, and reference material arrangement;
+- source confirmation and product understanding;
+- component/state matrix and A/B decision;
+- before/after prompt comparison;
+- Seedance-style executable shot prompts;
+- human review gates and failure repair rules.
+
 ## Typical Inputs
 
 - Product brief.
@@ -128,6 +143,7 @@ ecommerce-sku-skill-builder/
 │   ├── roadmap.md
 │   └── why-sku-skills.md
 ├── examples/
+│   ├── complete-chinese-case.md
 │   ├── demo-product-brief.md
 │   ├── demo-selling-point-map.md
 │   ├── demo-prompt-plan.md
