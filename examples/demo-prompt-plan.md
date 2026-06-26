@@ -1,5 +1,11 @@
 # Demo Prompt Plan
 
+## Unit Schedule
+
+| Unit | Type | Duration | Proof target | One visible beat | Stop when |
+|---|---:|---:|---|---|---|
+| U1 | A-out | 5s | Compact foldable body | Product fits beside laptop and keyboard | Product is stable, inspectable, and not crowding the desk |
+
 ## Unit U1 - Compact Office Desk Setup
 
 ### Unit Info
@@ -24,7 +30,7 @@
 @Image2：P2，controls the desk environment, laptop, keyboard, and office lighting; does not control product identity or product state.
 
 【画面要求】
-Realistic vertical phone-shot product video. Keep the humidifier shape and folded state from @Image1. Place it on the office desk context from @Image2 beside a laptop and keyboard. This clip only proves compact desk placement. The camera makes one small handheld push-in and stops when the product is stable, large enough to inspect, and clearly not crowding the workspace. Do not generate readable brand text, subtitles, or extra UI labels.
+Realistic vertical phone-shot product video. Keep the humidifier shape and folded state from @Image1. Place it on the office desk context from @Image2 beside a laptop and keyboard. This clip only proves compact desk placement. The camera makes one small handheld push-in. Stop when the product is stable, large enough to inspect, and clearly not crowding the workspace. Do not generate readable brand text, subtitles, or extra UI labels.
 ```
 
 ### Self Check
@@ -35,4 +41,3 @@ Realistic vertical phone-shot product video. Keep the humidifier shape and folde
 | reference roles declared | pass |
 | state consistent | pass |
 | text risk controlled | pass |
-

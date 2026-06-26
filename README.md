@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.2-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.3-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
@@ -210,7 +210,24 @@ Run the release check:
 python3 scripts/validate_release.py
 ```
 
-The validator checks the public release shape, skill frontmatter, required references, examples, and common private-path or credential leaks.
+Run prompt-plan checks:
+
+```bash
+python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
+python3 -m unittest discover -s tests -v
+```
+
+The validators check the public release shape, skill frontmatter, required references, examples, prompt-plan structure, reference role contracts, clip scopes, `Stop when` endpoints, and common private-path or credential leaks.
+
+## Schemas And Evals
+
+| File | Purpose |
+|---|---|
+| [`schemas/prompt-plan.schema.json`](schemas/prompt-plan.schema.json) | Structured prompt-plan contract |
+| [`schemas/asset-manifest.schema.json`](schemas/asset-manifest.schema.json) | Asset role and approval contract |
+| [`schemas/take-review.schema.json`](schemas/take-review.schema.json) | Generated-take review contract |
+| [`evals/prompt-plan-evals.json`](evals/prompt-plan-evals.json) | Prompt-plan validation cases |
+| [`scripts/prompt_plan_check.py`](scripts/prompt_plan_check.py) | Markdown prompt-plan checker |
 
 ## Learn More
 

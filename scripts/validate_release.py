@@ -35,14 +35,20 @@ REQUIRED_ROOT_FILES = [
     "docs/launch-playbook.md",
     "docs/roadmap.md",
     "docs/why-sku-skills.md",
+    "evals/prompt-plan-evals.json",
     "examples/before-after.md",
     "examples/complete-chinese-case.md",
     "examples/demo-product-brief.md",
     "examples/demo-selling-point-map.md",
     "examples/demo-prompt-plan.md",
     "scripts/install_codex_skill.py",
+    "scripts/prompt_plan_check.py",
+    "schemas/asset-manifest.schema.json",
+    "schemas/prompt-plan.schema.json",
+    "schemas/take-review.schema.json",
     "skills/sku-skill-builder/SKILL.md",
     "skills/sku-skill-builder/agents/openai.yaml",
+    "tests/test_prompt_plan_check.py",
 ]
 
 REQUIRED_REFERENCES = [
@@ -80,6 +86,7 @@ README_REQUIRED_SNIPPETS = [
     "Complete Chinese Walkthrough",
     "Real Run Case Study",
     "assets/workflow-hero.png",
+    "Schemas And Evals",
     "README.zh.md",
     "```mermaid",
     "skills/sku-skill-builder/SKILL.md",
@@ -90,6 +97,7 @@ README_ZH_REQUIRED_SNIPPETS = [
     "快速安装",
     "真实案例",
     "最终输出 SKU Skill 包样例",
+    "Schema / Eval / Test",
 ]
 
 

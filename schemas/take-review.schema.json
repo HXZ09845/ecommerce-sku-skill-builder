@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HXZ09845/ecommerce-sku-skill-builder/schemas/take-review.schema.json",
+  "title": "Ecommerce SKU Take Review",
+  "type": "object",
+  "required": ["reviews"],
+  "additionalProperties": false,
+  "properties": {
+    "reviews": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["unit", "verdict", "observed_end_state", "root_cause", "first_repair_variable"],
+        "additionalProperties": true,
+        "properties": {
+          "unit": { "type": "string", "minLength": 1 },
+          "verdict": { "type": "string", "enum": ["keep", "post_fix", "retake", "rewrite", "reject"] },
+          "observed_end_state": { "type": "string", "minLength": 1 },
+          "root_cause": { "type": "string", "minLength": 1 },
+          "first_repair_variable": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

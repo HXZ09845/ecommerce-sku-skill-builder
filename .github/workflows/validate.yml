@@ -18,7 +18,11 @@ jobs:
         run: python3 scripts/install_codex_skill.py --dry-run
       - name: Validate real-run case output
         run: python3 case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts/validate_case.py
+      - name: Validate prompt-plan evals
+        run: python3 scripts/prompt_plan_check.py --evals evals/prompt-plan-evals.json
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
       - name: Compile Python files
-        run: python3 -m compileall scripts skills/sku-skill-builder/scripts skills/sku-skill-builder/references case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts
+        run: python3 -m compileall scripts tests skills/sku-skill-builder/scripts skills/sku-skill-builder/references case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/scripts
       - name: Check diff whitespace
         run: git diff --check

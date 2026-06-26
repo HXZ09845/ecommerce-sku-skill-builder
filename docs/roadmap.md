@@ -19,10 +19,10 @@ This roadmap keeps the project focused on one job: making product-specific ecomm
 
 ## 0.3 Validator Depth
 
-- Expand validation for prompt-plan structure.
-- Add checks for asset role conflicts.
-- Add checks for selling-point proof coverage.
+- Expand validation for selling-point proof coverage.
 - Add checks for product-state contradictions.
+- Add checks for reserved-beat leakage across multi-clip plans.
+- Add richer evals for failed prompt-plan examples.
 
 ## 0.4 Workflow Integrations
 

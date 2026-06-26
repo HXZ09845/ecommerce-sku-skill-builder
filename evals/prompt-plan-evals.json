@@ -1,0 +1,23 @@
+{
+  "version": "0.1.3",
+  "cases": [
+    {
+      "id": "real_run_office_tea_bar_prompt_plan",
+      "path": "case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/references/prompt-plan.md",
+      "min_units": 5,
+      "min_reference_rows": 5,
+      "min_clip_scopes": 3,
+      "min_stop_when": 3,
+      "requires_take_review": true
+    },
+    {
+      "id": "demo_humidifier_prompt_plan",
+      "path": "examples/demo-prompt-plan.md",
+      "min_units": 1,
+      "min_reference_rows": 2,
+      "min_clip_scopes": 1,
+      "min_stop_when": 0,
+      "requires_take_review": false
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.3 - 2026-06-26
+
+- Added prompt-plan, asset-manifest, and take-review JSON schemas.
+- Added prompt-plan eval cases.
+- Added `scripts/prompt_plan_check.py` for markdown prompt-plan validation.
+- Added unittest coverage for prompt-plan validation.
+- Extended CI to run prompt-plan evals and tests.
+
 ## 0.1.2 - 2026-06-26
 
 - Added a Chinese README for ecommerce video producers and SKU Skill users.
