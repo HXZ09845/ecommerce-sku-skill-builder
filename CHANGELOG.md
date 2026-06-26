@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.8 - 2026-06-26
+
+- Added `scripts/selling_point_check.py` to validate selling-point proof coverage in prompt plans.
+- Added unit tests for missing Unit references and generic visual proof failures.
+- Added CI coverage for the public prompt-plan template and anonymized real-run case.
+
 ## 0.1.7 - 2026-06-26
 
 - Added public templates for product briefs, selling-point maps, asset manifests, prompt plans, and take reviews.
