@@ -20,6 +20,9 @@ REQUIRED_ROOT_FILES = [
     ".github/ISSUE_TEMPLATE/bug_report.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "assets/workflow-hero.png",
+    "case-studies/real-run-a6-office-tea-bar/README.md",
+    "case-studies/real-run-a6-office-tea-bar/prompt-before-after.md",
     "docs/architecture.md",
     "docs/launch-playbook.md",
     "docs/roadmap.md",
@@ -66,6 +69,8 @@ README_REQUIRED_SNIPPETS = [
     "The Problem",
     "Before / After",
     "Complete Chinese Walkthrough",
+    "Real Run Case Study",
+    "assets/workflow-hero.png",
     "```mermaid",
     "skills/sku-skill-builder/SKILL.md",
 ]

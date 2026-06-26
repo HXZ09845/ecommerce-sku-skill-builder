@@ -8,12 +8,15 @@
 
 电商 AIGC 短视频不应该从“写 prompt”开始。稳定的商品视频生产要先做商品结构理解、卖点视觉证明、素材角色绑定、A/B 状态判断、脚本-Unit-素材编排、验证和 bad-case 回归。This repository packages that workflow as a Codex-compatible Agent Skill.
 
+![Ecommerce SKU Skill Builder workflow](assets/workflow-hero.png)
+
 ## Why Star This
 
 - You build AI video workflows for ecommerce products.
 - You want a real Agent Skill package structure, not just prompt examples.
 - You need a repeatable way to convert product briefs and reference assets into prompt plans.
 - You care about validation, bad-case regression, and handoff-ready Skill packages.
+- You want to see how a real production prompt-plan gets compiled into safer shot contracts.
 
 ## The Problem
 
@@ -88,6 +91,14 @@ It shows a full fictional ecommerce video case in Chinese:
 - Seedance-style executable shot prompts;
 - human review gates and failure repair rules.
 
+## Real Run Case Study
+
+The repository also includes an anonymized real production run:
+
+[`case-studies/real-run-a6-office-tea-bar/`](case-studies/real-run-a6-office-tea-bar/)
+
+This case is derived from a real ecommerce video prompt-plan workflow. Product brand names, raw media files, asset IDs, and unpublished generated videos are intentionally not included. The public case keeps the useful engineering evidence: Unit schedule, A/B decisions, asset role boundaries, before/after prompt changes, take-review rules, and what was learned from the run.
+
 ## Typical Inputs
 
 - Product brief.
@@ -137,6 +148,10 @@ Start with source confirmation and product understanding only.
 ```text
 ecommerce-sku-skill-builder/
 ├── README.md
+├── assets/
+│   └── workflow-hero.png
+├── case-studies/
+│   └── real-run-a6-office-tea-bar/
 ├── docs/
 │   ├── architecture.md
 │   ├── launch-playbook.md
