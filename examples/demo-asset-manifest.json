@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "id": "@Image1",
+      "priority": "P0",
+      "role": "product_identity",
+      "controls": "folded humidifier shape, color, scale, and product identity",
+      "does_not_control": "office background, user action, generated text",
+      "status": "approved"
+    },
+    {
+      "id": "@Image2",
+      "priority": "P2",
+      "role": "desk_scene",
+      "controls": "desk, laptop, keyboard, lighting, and office context",
+      "does_not_control": "product identity, product state, brand text",
+      "status": "approved"
+    },
+    {
+      "id": "@Video1",
+      "priority": "P1",
+      "role": "motion_reference",
+      "controls": "small handheld push-in rhythm only",
+      "does_not_control": "product identity, office layout, new objects",
+      "status": "pending"
+    }
+  ]
+}

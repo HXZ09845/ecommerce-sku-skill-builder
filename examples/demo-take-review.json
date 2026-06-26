@@ -1,0 +1,18 @@
+{
+  "reviews": [
+    {
+      "unit": "U1",
+      "verdict": "post_fix",
+      "observed_end_state": "Product is stable beside laptop and keyboard, but the final frame has faint fake UI text on the product.",
+      "root_cause": "Text prohibition was not strong enough for the model.",
+      "first_repair_variable": "Add explicit no readable brand text, subtitles, UI labels, or fake screen text."
+    },
+    {
+      "unit": "U2",
+      "verdict": "retake",
+      "observed_end_state": "Mist appears from the wrong side of the product.",
+      "root_cause": "Output location was not locked to the correct product component.",
+      "first_repair_variable": "Bind mist to the visible outlet and reduce intensity."
+    }
+  ]
+}

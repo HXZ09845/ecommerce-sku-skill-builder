@@ -40,12 +40,15 @@ REQUIRED_ROOT_FILES = [
     "evals/prompt-plan-evals.json",
     "examples/before-after.md",
     "examples/complete-chinese-case.md",
+    "examples/demo-asset-manifest.json",
     "examples/demo-product-brief.md",
     "examples/demo-selling-point-map.md",
+    "examples/demo-take-review.json",
     "examples/demo-prompt-plan.md",
     "scripts/install_codex_skill.py",
     "scripts/prompt_plan_check.py",
     "scripts/source_registry_check.py",
+    "scripts/structured_data_check.py",
     "schemas/asset-manifest.schema.json",
     "schemas/prompt-plan.schema.json",
     "schemas/source-registry.schema.json",
@@ -53,6 +56,8 @@ REQUIRED_ROOT_FILES = [
     "skills/sku-skill-builder/SKILL.md",
     "skills/sku-skill-builder/agents/openai.yaml",
     "tests/test_prompt_plan_check.py",
+    "tests/test_structured_data_check.py",
+    "tests/test_source_registry_check.py",
 ]
 
 REQUIRED_REFERENCES = [

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "last_updated": "2026-06-26",
   "policy": "Public repository sources must be fictional, generated, open project files, or anonymized real-run evidence. Raw private media, local paths, asset IDs, customer data, and unpublished generated videos are not included.",
   "sources": [
@@ -56,6 +56,28 @@
       "status": "included",
       "includes": ["public skill instructions", "references", "scripts", "agent metadata"],
       "excludes": ["private product libraries", "customer-specific media", "local source workspace"],
+      "verified_on": "2026-06-26"
+    },
+    {
+      "id": "demo_asset_manifest_json",
+      "title": "Demo asset manifest JSON",
+      "type": "fictional_demo",
+      "path": "examples/demo-asset-manifest.json",
+      "privacy_level": "public",
+      "status": "included",
+      "includes": ["fictional asset IDs", "roles", "controls", "does_not_control", "approval status"],
+      "excludes": ["real media files", "customer assets", "private paths"],
+      "verified_on": "2026-06-26"
+    },
+    {
+      "id": "demo_take_review_json",
+      "title": "Demo take review JSON",
+      "type": "fictional_demo",
+      "path": "examples/demo-take-review.json",
+      "privacy_level": "public",
+      "status": "included",
+      "includes": ["fictional take reviews", "verdicts", "observed end states", "repair variables"],
+      "excludes": ["real generated videos", "customer assets", "private paths"],
       "verified_on": "2026-06-26"
     }
   ]

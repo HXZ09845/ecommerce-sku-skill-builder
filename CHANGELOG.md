@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5 - 2026-06-26
+
+- Added JSON examples for asset manifests and take reviews.
+- Added `scripts/structured_data_check.py` for schema-adjacent structured-data validation.
+- Added unit tests for asset-manifest and take-review checks.
+- Registered structured examples in the source registry.
+- Extended CI and release validation for structured-data checks.
+
 ## 0.1.4 - 2026-06-26
 
 - Added a machine-readable source registry for public evidence and privacy boundaries.

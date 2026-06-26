@@ -1,7 +1,7 @@
 # Ecommerce SKU Skill Builder
 
 [![Validate](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/HXZ09845/ecommerce-sku-skill-builder/actions/workflows/validate.yml)
-[![Version](https://img.shields.io/badge/version-v0.1.4-0f766e.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.1.5-0f766e.svg)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/agent--skill-Codex%20ready-111827)](skills/sku-skill-builder/SKILL.md)
 
@@ -240,6 +240,9 @@ The validators check the public release shape, skill frontmatter, required refer
 | [`evals/prompt-plan-evals.json`](evals/prompt-plan-evals.json) | Prompt-plan validation cases |
 | [`scripts/prompt_plan_check.py`](scripts/prompt_plan_check.py) | Markdown prompt-plan checker |
 | [`scripts/source_registry_check.py`](scripts/source_registry_check.py) | Source provenance and privacy-boundary checker |
+| [`examples/demo-asset-manifest.json`](examples/demo-asset-manifest.json) | Example asset manifest |
+| [`examples/demo-take-review.json`](examples/demo-take-review.json) | Example generated-take review |
+| [`scripts/structured_data_check.py`](scripts/structured_data_check.py) | JSON example checker |
 
 ## Learn More
 

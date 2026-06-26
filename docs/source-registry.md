@@ -33,6 +33,8 @@ The machine-readable registry lives at [`data/source-registry.json`](../data/sou
 | `real_run_office_tea_bar` | anonymized real run | anonymized | `case-studies/real-run-a6-office-tea-bar/README.md` | Proves the workflow was applied to a real production case |
 | `real_run_output_skill_sample` | anonymized output package | anonymized | `case-studies/real-run-a6-office-tea-bar/office-tea-bar-overtime-sku/SKILL.md` | Shows the final SKU Skill package shape |
 | `packaged_sku_skill_builder` | skill package | public | `skills/sku-skill-builder/SKILL.md` | The installable Agent Skill |
+| `demo_asset_manifest_json` | fictional demo | public | `examples/demo-asset-manifest.json` | Shows structured asset role metadata |
+| `demo_take_review_json` | fictional demo | public | `examples/demo-take-review.json` | Shows structured take-review metadata |
 
 ## Validation
 
